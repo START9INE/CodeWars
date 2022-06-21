@@ -1,0 +1,40 @@
+/*  Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+*/
+
+function getCount(str) {
+    var vowelsCount = 0;
+    for ( i = 0; i <= str.length - 1; i++){
+      if (str.charAt(i) == "a" || str.charAt(i) == "e" || str.charAt(i) == "i" || str.charAt(i) == "o" || str.charAt(i) == "u"){
+        vowelsCount += 1;
+      }
+    }
+    return vowelsCount;
+  }
+
+  // OR //
+
+
+  function getCount(str) {
+    return (str.match(/[aeiou]/ig)||[]).length;
+  }
+
+
+  // OR //
+
+  function getCount(str) {
+    var vowelsCount = 0;
+    var vowels = ["a","e","i","o","u"];
+    for(var i = 0;i < str.length;i++){
+      for(var j=0;j<vowels.length;j++){
+        if(str[i] === vowels[j]){
+          vowelsCount++;
+        }
+      }
+    }
+    
+    return vowelsCount;
+  }
