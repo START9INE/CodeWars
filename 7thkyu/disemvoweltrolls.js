@@ -20,6 +20,7 @@ Note: for this kata y isn't considered a vowel.
 // The 'g' and 'i'  are modifiers                                                                //
 // 'g' is global, match all instances of the pattern in a string, not just the first one         //
 // 'i' is case senseitive (matches all characters regardless of  case)                           //
+// In the paranthesis were putting what we want it replaced with. In this case it's empty        //
 //===============================================================================================//
 function disemvowel(str) {
   
