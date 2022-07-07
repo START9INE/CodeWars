@@ -26,6 +26,9 @@ function XO(str) {
    // A one liner
    // assigned variable and returned in the same line.
     return (numOfX = (str.match(/[x]/gi) || []).length) == (numOfO = (str.match(/[o]/gi) || []).length) ? true : false;
+    // OR //
+
+    return (numOfX = (str.match(/[x]/gi) || []).length) === (numOfO = (str.match(/[o]/gi) || []).length) 
   }
 
 
@@ -40,5 +43,6 @@ function XO(str) {
   // we handle this by using the logical OR (||) operator.
   // We don't want to access the 'length' property of a vulue of 'null' because we'd receive an error.
   // The logical OR (||) operator allows us to return an empty array if the 'match' mnethod returned 'null'
-  // And the brackets on the far right returns the number of matches.
+  // And the brackets on the far right returns an array with matches.
+  // We then use .length of the array to return the number of matches.
   // We then used an if statement to compare the results and returned true for equal matches otherwise false.
