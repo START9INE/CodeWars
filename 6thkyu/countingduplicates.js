@@ -45,3 +45,4 @@ function duplicateCount(text){
 
   // Quantifier — Matches between one and unlimited times, as many times as possible, giving back as needed (greedy)
   // Finally we return the length of the match.
+  // **Foot note** in the regex || [] accounts for no matches. This returns an emptry array in palce of null in case there are no matches.
