@@ -33,7 +33,7 @@ function duplicateEncode(word){
     return word         
       .toLowerCase()    // Convert to lowercase
       .split('')        // Convert to an array.
-      .map( function (a, i, w) {  // Call on the .map((element, index, array) method 
+      .map( function (a, i, w) {  // Call on the .map((element, index, array) method (this creates anew array with the results of the below function)
         return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'  // A very clever use of .indexOf() and .lastIndexOf() methods.
       })                                                     // indexOf() returns the first index that the element is found at
       .join('');                                             // lastIndexOf() returns the last index that the element is found at.
@@ -42,3 +42,4 @@ function duplicateEncode(word){
                                                             // If they are not equal then the element does repeat 
                                                             // Thus we return ')'
                                                             // Finally we join the array to return the string.
+                                                            // More on .map() here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
