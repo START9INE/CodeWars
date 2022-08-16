@@ -94,3 +94,6 @@ switch(expression) {
       default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this'; // includes name at index 0 and 1 and adds names.length -2 others like this.
     }
   }
+
+
+  // More on switch statements: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
