@@ -44,3 +44,5 @@ function alphabetPosition(text) {
     .join(' ') converts the array object ['a', 'b'] back into a string 'a b'
     */
     
+    // More info on .charCodeAt(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+    // More info on .map(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
