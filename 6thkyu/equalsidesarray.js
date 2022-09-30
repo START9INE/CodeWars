@@ -41,6 +41,6 @@ function findEvenIndex(arr)
       
       if(left == right) return i;             // Use conditonal to test if left value == to right value
   }                                           // If it does return the current element
-                                              // If the variables are never == return -1
+                                              // If the variables are never == return -1         
   return -1;
 }
