@@ -26,6 +26,19 @@ function digitalRoot(n) {
 
 
 
-
+// This was my original answer
+// I was applying the while loop for recusion
+// however clearly it wasn't looping through.
+// I was not assigning n to anything and simply hoping to change the value of n with each recursion.
+// Obviously it didn't work that way.
+// So i initialized three new value.
+// sum which was equal to n
+// arr which was equal to [] or empty array
+// reducer which contained our reducer function
+// i then performed a while loop that checked if sum was greater than 9
+// if so it converted the sum to a array with separated values
+// it then would reduce arr to a single value and return it back to an int
+// it would then check if this new sum was again greater than 9 and proceed to run the proess again.
+// It would stop when the sum was 9 or less.
 
   // return n.toString().split('').map(Number).reduce((a,b) => a + b)
